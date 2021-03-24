@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Login.master.cs" Inherits="StudentManagementASPPCrudProject.MasterPages.Login" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />   
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+         <asp:ScriptManager runat="server"></asp:ScriptManager>
+            <header class="jumbotron" style="height:60px; background-color:#492B47; color:white; margin:0 0 0 0">
+                <center>
+                    <asp:Label ID="Label1" CssClass="label label-success top" Font-Size="X-Large" runat="server" Text="Welcome to my web form CRUD project"></asp:Label>                    
+                </center>                
+            </header>
+             <%--<h2>Login master pages</h2>--%>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+               
+            </asp:ContentPlaceHolder>
+        <footer class="jumbotron" style="background-color:#95365C; color:white">
+            <center><h4 class="h4" style="color:white">copyright@ 2020; Developed By: MD. OBYDULLAH; Web form projecct</h4>
+                <a href="https://www.facebook.com/" target="_blank" style="color:white">Facebook</a>&nbsp;&nbsp;<a href="https://www.google.com/" target="_blank" style="color:white">Google</a></center>
+        </footer>
+    </form>
+</body>
+</html>
